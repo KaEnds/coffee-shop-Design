@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Coffee shop</title>
+</head>
+<body>
+    <nav class="navbg"></nav>
+    <nav class="navbar">
+        <div class="logo">coffee shop</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#show">Our coffee</a></li>
+            <li><a href="#cafe">Cafe`</a></li>
+            <li><a href="#service">Service</a></li>
+        </ul>
+    </nav>
+    <div class="frist-page" id="main">
+        <img src="https://wallpaperaccess.com/full/1320593.jpg" alt="">
+        <h1>Adinla Cafe</h1>
+        <div class="icon-bar">
+            <div class="iconbg"></div>
+            <div class="icon">
+                <i class="material-icons">home</i><br>
+                Our cafe
+            </div>
+            <div class="icon">
+                <i class="material-icons">question_answer</i><br>
+                About
+            </div>
+            <div class="icon">
+                <i class="material-icons">build</i><br>
+                Magnagement
+            </div>
+            <div class="icon">
+                <i class="material-icons">location_on</i><br>
+                Location
+            </div>
+            <div class="icon">
+                <i class="material-icons">people</i><br>
+                Staff
+            </div>
+        </div>
+    </div>
+
+    <div class="show-coffee" id="show">
+        <div class="background"></div>
+        <h1>Our coffee</h1>
+        <div class="serach-bar">
+            <label>serach</label>
+            <input type="text" id="search">
+            <button onclick="getNamecoffee()"><i class="material-icons">search</i></button>
+        </div>
+        <div class="show-item">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </div>
+
+    <div class="cafe" id="cafe">
+        <h1>Our cafe</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, ex! Veniam sequi officiis at corrupti, pariatur iusto nobis quam velit.</p>
+        <div class="slice-bar">
+            <span onclick="previous()">&#8249;</span>
+            <div class="showimg">
+                <img src="https://thestandard.co/wp-content/uploads/2021/12/Qoofe-Cafe.jpg" alt="">
+            </div>
+            <div class="showimg">
+                <img src="https://www.wandeehouse.com/static/upload/content/1/918/sisterhood-35.jpg" alt="">
+            </div>
+            <div class="showimg">
+                <img src="https://s.isanook.com/tr/0/ui/285/1427369/Molyn-Cafe-02.jpg" alt="">
+            </div>
+            <div class="showimg">
+                <img src="https://www.forfur.com/img/I78/t_7768_15834695531647236585.jpg" alt="">
+            </div>
+
+            <span onclick="next()">&#8250;</span>
+
+            <div class="slice-index">
+                <span class="dot" onclick="dotclick(0)"></span>
+                <span class="dot" onclick="dotclick(1)"></span>
+                <span class="dot" onclick="dotclick(2)"></span>
+                <span class="dot" onclick="dotclick(3)"></span>
+            </div>
+
+        </div>
+    </div>
+    <div class="service" id="service">
+        <br>
+        <h1>Our service</h1>
+        <p>&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque vitae amet eligendi ex consequuntur aperiam suscipit fuga voluptatem, corporis, labore sequi, quis iste et inventore dolor enim sint iure. Exercitationem vero vel, dolore magnam accusantium eveniet similique commodi ea, in dicta velit adipisci sint libero nisi eligendi voluptate! Nemo, quam.</p>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
